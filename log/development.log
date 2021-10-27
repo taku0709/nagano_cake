@@ -1129,3 +1129,157 @@ Processing by Admin::GenresController#index as HTML
 Completed 200 OK in 117ms (Views: 115.8ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/admin/genres" for 27.137.114.79 at 2021-10-27 12:31:07 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:22
+  Rendered admin/genres/index.html.erb within layouts/application (18.1ms)
+Started GET "/admin/items/new" for 27.137.114.79 at 2021-10-27 12:31:18 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Completed 200 OK in 10773ms (Views: 10757.8ms | ActiveRecord: 0.8ms)
+
+
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  Rendered admin/items/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 2.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/admin/items/new.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+...or(@item, :url admin_items_path) do |f| @output_buffer.safe_...
+...               ^~~~~~~~~~~~~~~~):
+  
+app/views/admin/items/new.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/admin/items/new" for 27.137.114.79 at 2021-10-27 12:32:49 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  Rendered admin/items/new.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/admin/items/new.html.erb:24: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/admin/items/new.html.erb:24: syntax error, unexpected end-of-input, expecting end
+Started GET "/admin/items/new" for 27.137.114.79 at 2021-10-27 12:33:17 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  Rendered admin/items/new.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/admin/items/new.html.erb:24: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/admin/items/new.html.erb:24: syntax error, unexpected end-of-input, expecting end
+Started GET "/admin/items/new" for 27.137.114.79 at 2021-10-27 12:33:17 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  Rendered admin/items/new.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/admin/items/new.html.erb:24: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/admin/items/new.html.erb:24: syntax error, unexpected end-of-input, expecting end
+Started GET "/admin/items/new" for 27.137.114.79 at 2021-10-27 16:22:00 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  Rendered admin/items/new.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/admin/items/new.html.erb:32: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+...録" , class :"btn btn-primary" );@output_buffer.safe_append='
+...                                ^
+/home/ec2-user/environment/nagano_cake/app/views/admin/items/new.html.erb:37: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ec2-user/environment/nagano_cake/app/views/admin/items/new.html.erb:39: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/admin/items/new.html.erb:32: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/admin/items/new.html.erb:37: syntax error, unexpected ensure, expecting ')'
+app/views/admin/items/new.html.erb:39: syntax error, unexpected end, expecting ')'
+Started GET "/admin/items/new" for 27.137.114.79 at 2021-10-27 16:22:25 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  Rendered admin/items/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/admin/items/new.html.erb:32: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+...録" , class :"btn btn-primary" );@output_buffer.safe_append='
+...                                ^
+/home/ec2-user/environment/nagano_cake/app/views/admin/items/new.html.erb:33: syntax error, unexpected end, expecting ')'
+'.freeze;      end 
+               ^~~
+/home/ec2-user/environment/nagano_cake/app/views/admin/items/new.html.erb:38: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ec2-user/environment/nagano_cake/app/views/admin/items/new.html.erb:40: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/admin/items/new.html.erb:32: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/admin/items/new.html.erb:33: syntax error, unexpected end, expecting ')'
+app/views/admin/items/new.html.erb:38: syntax error, unexpected ensure, expecting ')'
+app/views/admin/items/new.html.erb:40: syntax error, unexpected end, expecting ')'
+Started GET "/admin/items/new" for 27.137.114.79 at 2021-10-27 16:23:17 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  Rendered admin/items/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/admin/items/new.html.erb:32: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+...録", class :"btn btn-primary" );@output_buffer.safe_append='
+...                               ^
+/home/ec2-user/environment/nagano_cake/app/views/admin/items/new.html.erb:33: syntax error, unexpected end, expecting ')'
+'.freeze;      end 
+               ^~~
+/home/ec2-user/environment/nagano_cake/app/views/admin/items/new.html.erb:38: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ec2-user/environment/nagano_cake/app/views/admin/items/new.html.erb:40: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/admin/items/new.html.erb:32: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/admin/items/new.html.erb:33: syntax error, unexpected end, expecting ')'
+app/views/admin/items/new.html.erb:38: syntax error, unexpected ensure, expecting ')'
+app/views/admin/items/new.html.erb:40: syntax error, unexpected end, expecting ')'
+Started GET "/admin/items/new" for 27.137.114.79 at 2021-10-27 16:23:28 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  Rendered admin/items/new.html.erb within layouts/application (96.8ms)
+Completed 200 OK in 609ms (Views: 607.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/items/new" for 27.137.114.79 at 2021-10-27 16:23:31 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  Rendered admin/items/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 62ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
