@@ -76,6 +76,7 @@ ActiveRecord::Schema.define(version: 2021_10_15_145903) do
     t.boolean "is_active"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "is_activ"
   end
 
   create_table "order_details", force: :cascade do |t|
