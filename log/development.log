@@ -6009,3 +6009,64 @@ Processing by Admin::ItemsController#show as HTML
 Completed 200 OK in 139ms (Views: 135.9ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/admin/customers" for 27.91.171.205 at 2021-10-31 11:30:20 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Admin::CustomersController#index as HTML
+  Rendering admin/customers/index.html.erb within layouts/application
+  Rendered admin/customers/index.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:        </tr>
+    12:       </thead>
+    13:       <tbody>
+    14:        <%= @customers.each do |customer| %>
+    15:         <tr>
+    16:           <td><%= customer.id %></td>
+    17:           <td><%= link_to customer.last_name+customer.first_name, admin_customer_path(customer.id) %></td>
+  
+app/views/admin/customers/index.html.erb:14:in `_app_views_admin_customers_index_html_erb__1116614458125719357_28673720'
+Started GET "/admin/customers" for 27.91.171.205 at 2021-10-31 11:30:46 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::CustomersController#index as HTML
+  Rendering admin/customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/admin/customers/index.html.erb:14
+  Rendered admin/customers/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 659ms (Views: 656.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/customers" for 27.91.171.205 at 2021-10-31 11:30:49 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::CustomersController#index as HTML
+  Rendering admin/customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/admin/customers/index.html.erb:14
+  Rendered admin/customers/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 110ms (Views: 108.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/customers" for 27.91.171.205 at 2021-10-31 11:31:13 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::CustomersController#index as HTML
+  Rendering admin/customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/admin/customers/index.html.erb:14
+  Rendered admin/customers/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 116ms (Views: 114.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/customers" for 27.91.171.205 at 2021-10-31 11:31:15 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::CustomersController#index as HTML
+  Rendering admin/customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/admin/customers/index.html.erb:14
+  Rendered admin/customers/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 133ms (Views: 131.7ms | ActiveRecord: 0.1ms)
+
+
