@@ -6070,3 +6070,365 @@ Processing by Admin::CustomersController#index as HTML
 Completed 200 OK in 133ms (Views: 131.7ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/admin/items" for 27.91.171.205 at 2021-10-31 12:37:56 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Admin::ItemsController#index as HTML
+  Rendering admin/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/admin/items/index.html.erb:15
+  Rendered admin/items/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 412ms (Views: 388.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/items" for 27.91.171.205 at 2021-10-31 12:37:58 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#index as HTML
+  Rendering admin/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/admin/items/index.html.erb:15
+  Rendered admin/items/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 118ms (Views: 116.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/items/1" for 27.91.171.205 at 2021-10-31 12:38:01 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:21
+  Rendering admin/items/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/show.html.erb:12
+  Rendered admin/items/show.html.erb within layouts/application (55.7ms)
+Completed 200 OK in 200ms (Views: 189.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/items/1/edit" for 27.91.171.205 at 2021-10-31 12:38:04 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:25
+  Rendering admin/items/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/edit.html.erb:21
+  Rendered admin/items/edit.html.erb within layouts/application (106.9ms)
+Completed 200 OK in 247ms (Views: 244.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/items/1" for 27.91.171.205 at 2021-10-31 12:41:39 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:21
+  Rendering admin/items/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/show.html.erb:12
+  Rendered admin/items/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 150ms (Views: 146.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/items/1/edit" for 27.91.171.205 at 2021-10-31 12:41:40 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:25
+  Rendering admin/items/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/edit.html.erb:21
+  Rendered admin/items/edit.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 150ms (Views: 147.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/items" for 27.91.171.205 at 2021-10-31 12:42:01 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Admin::ItemsController#index as HTML
+  Rendering admin/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/admin/items/index.html.erb:15
+  Rendered admin/items/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 405ms (Views: 392.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/items/1" for 27.91.171.205 at 2021-10-31 12:42:03 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:21
+  Rendering admin/items/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/show.html.erb:12
+  Rendered admin/items/show.html.erb within layouts/application (46.2ms)
+Completed 200 OK in 161ms (Views: 156.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/items/1/edit" for 27.91.171.205 at 2021-10-31 12:42:05 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:25
+  Rendering admin/items/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/edit.html.erb:21
+  Rendered admin/items/edit.html.erb within layouts/application (104.5ms)
+Completed 200 OK in 229ms (Views: 224.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/items/1/edit" for 27.91.171.205 at 2021-10-31 12:42:26 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:25
+  Rendering admin/items/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/edit.html.erb:21
+  Rendered admin/items/edit.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 194ms (Views: 190.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/items/1/edit" for 27.91.171.205 at 2021-10-31 12:42:28 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:25
+  Rendering admin/items/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/edit.html.erb:21
+  Rendered admin/items/edit.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 103ms (Views: 99.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/items/1/edit" for 27.91.171.205 at 2021-10-31 12:43:09 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:25
+  Rendering admin/items/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/edit.html.erb:21
+  Rendered admin/items/edit.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 118ms (Views: 115.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/items/1/edit" for 27.91.171.205 at 2021-10-31 12:44:36 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:25
+  Rendering admin/items/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/edit.html.erb:22
+  Rendered admin/items/edit.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 123ms (Views: 119.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/admin/items/1" for 27.91.171.205 at 2021-10-31 12:45:22 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x8SwvT1KaKBej9ITuIJNFzSA/P8UjFXo0UFP37jKy9C1dgIAqDVhz/W8zC6AAk2hKoRKcf+R+oDUOrz6uzwJ6A==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007ff9865ac1c0 @tempfile=#<Tempfile:/tmp/RackMultipart20211031-16701-16xn0sm.jpeg>, @original_filename="chocolate.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"chocolate.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"チョコレートケーキ", "introduction"=>"test", "genre_id"=>"1", "price"=>"1000", "is_active"=>"true"}, "commit"=>"変更を保存", "id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:29
+  [1m[35m (0.9ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/items_controller.rb:30
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:30
+  [1m[36mItem Update (0.5ms)[0m  [1m[33mUPDATE "items" SET "is_active" = ?, "image_id" = ?, "updated_at" = ? WHERE "items"."id" = ?[0m  [["is_active", 1], ["image_id", "2fe3fc2970598fb4d4cfc46bd3b82499a1c178e799ad2076944799f4cf34"], ["updated_at", "2021-10-31 12:45:22.385787"], ["id", 1]]
+  ↳ app/controllers/admin/items_controller.rb:30
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/items_controller.rb:30
+Redirected to https://ee717d83bb1c4f8a99894899e02ad7b3.vfs.cloud9.us-east-1.amazonaws.com/admin/items/1
+Completed 302 Found in 22ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/admin/items/1" for 27.91.171.205 at 2021-10-31 12:45:22 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:21
+  Rendering admin/items/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/show.html.erb:12
+  Rendered admin/items/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 99ms (Views: 97.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/attachments/40a18f6ac5182508036bb2938cf8bbce283204c0/store/fill/200/200/2fe3fc2970598fb4d4cfc46bd3b82499a1c178e799ad2076944799f4cf34/image.jpeg" for 27.91.171.205 at 2021-10-31 12:45:22 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-10-31 12:45:23 +0000] GET "/40a18f6ac5182508036bb2938cf8bbce283204c0/store/fill/200/200/2fe3fc2970598fb4d4cfc46bd3b82499a1c178e799ad2076944799f4cf34/image.jpeg" 200 186.5ms
+
+Started GET "/admin/items/new" for 27.91.171.205 at 2021-10-31 12:45:32 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/new.html.erb:20
+  Rendered admin/items/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 106ms (Views: 103.9ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGenre Create (2.5ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "焼き菓子"], ["created_at", "2021-10-31 12:50:04.501446"], ["updated_at", "2021-10-31 12:50:04.501446"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGenre Create (0.8ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "プリン"], ["created_at", "2021-10-31 12:50:27.841955"], ["updated_at", "2021-10-31 12:50:27.841955"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/admin/items/new" for 27.91.171.205 at 2021-10-31 12:51:05 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/new.html.erb:20
+  Rendered admin/items/new.html.erb within layouts/application (80.7ms)
+Completed 200 OK in 651ms (Views: 631.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/items/new" for 27.91.171.205 at 2021-10-31 12:51:10 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/new.html.erb:20
+  Rendered admin/items/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 180ms (Views: 178.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/admin/items" for 27.91.171.205 at 2021-10-31 12:53:48 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nQJEY5EFsLGmU0oqqth/AlNc0ncfJmJu54IXgp3570TvsPbeBHq53g1gVBeSWH+0TVhk+fQ7zQbi+eSnng8tfA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f268a36b520 @tempfile=#<Tempfile:/tmp/RackMultipart20211031-17496-vpwraf.jpeg>, @original_filename="pudding.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"pudding.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"カスタードプリン", "introduction"=>"test", "genre_id"=>"3", "price"=>"1000", "is_active"=>"on_sale"}, "commit"=>"新規登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/items_controller.rb:13
+  [1m[36mGenre Load (6.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:13
+  [1m[36mItem Create (1.7ms)[0m  [1m[32mINSERT INTO "items" ("genre_id", "name", "image_id", "introduction", "price", "is_active", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["genre_id", 3], ["name", "カスタードプリン"], ["image_id", "d88deaad30f044ce952b8e60f42c388d17b0910b481bcc593aa1b0cdcfc7"], ["introduction", "test"], ["price", 1000], ["is_active", 1], ["created_at", "2021-10-31 12:53:48.302549"], ["updated_at", "2021-10-31 12:53:48.302549"]]
+  ↳ app/controllers/admin/items_controller.rb:13
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/items_controller.rb:13
+Redirected to https://ee717d83bb1c4f8a99894899e02ad7b3.vfs.cloud9.us-east-1.amazonaws.com/admin/items/2
+Completed 302 Found in 30ms (ActiveRecord: 11.8ms)
+
+
+Started GET "/admin/items/2" for 27.91.171.205 at 2021-10-31 12:53:48 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:21
+  Rendering admin/items/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/items/show.html.erb:12
+  Rendered admin/items/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 417ms (Views: 411.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/attachments/294937bc07456f25bc425e02d58905a9d4662660/store/fill/200/200/d88deaad30f044ce952b8e60f42c388d17b0910b481bcc593aa1b0cdcfc7/image.jpeg" for 27.91.171.205 at 2021-10-31 12:53:49 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-10-31 12:53:49 +0000] GET "/294937bc07456f25bc425e02d58905a9d4662660/store/fill/200/200/d88deaad30f044ce952b8e60f42c388d17b0910b481bcc593aa1b0cdcfc7/image.jpeg" 200 97.3ms
+
+Started GET "/admin/items/2/edit" for 27.91.171.205 at 2021-10-31 12:53:51 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:25
+  Rendering admin/items/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/edit.html.erb:22
+  Rendered admin/items/edit.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 167ms (Views: 163.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/items/" for 27.91.171.205 at 2021-10-31 12:54:03 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#index as HTML
+  Rendering admin/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/admin/items/index.html.erb:15
+  Rendered admin/items/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 128ms (Views: 126.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/items/1" for 27.91.171.205 at 2021-10-31 12:54:09 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:21
+  Rendering admin/items/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/show.html.erb:12
+  Rendered admin/items/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 131ms (Views: 127.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/items/1/edit" for 27.91.171.205 at 2021-10-31 12:54:10 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:25
+  Rendering admin/items/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/edit.html.erb:22
+  Rendered admin/items/edit.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 179ms (Views: 169.3ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/admin/items/1" for 27.91.171.205 at 2021-10-31 12:54:15 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OYSriW+h4Glaq/yPstpzZhRq6tyji+DUi2Khf/E/CoQJSB5drgIUeIhAxlitpw7Dwr+kmNTT2ClxLU75CcFjYg==", "item"=>{"image"=>"{}", "name"=>"チョコレートケーキ", "introduction"=>"test", "genre_id"=>"1", "price"=>"2000", "is_active"=>"true"}, "commit"=>"変更を保存", "id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:29
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/items_controller.rb:30
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:30
+  [1m[36mItem Update (2.3ms)[0m  [1m[33mUPDATE "items" SET "price" = ?, "image_id" = ?, "updated_at" = ? WHERE "items"."id" = ?[0m  [["price", 2000], ["image_id", "2fe3fc2970598fb4d4cfc46bd3b82499a1c178e799ad2076944799f4cf34"], ["updated_at", "2021-10-31 12:54:15.267032"], ["id", 1]]
+  ↳ app/controllers/admin/items_controller.rb:30
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/items_controller.rb:30
+Redirected to https://ee717d83bb1c4f8a99894899e02ad7b3.vfs.cloud9.us-east-1.amazonaws.com/admin/items/1
+Completed 302 Found in 20ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/admin/items/1" for 27.91.171.205 at 2021-10-31 12:54:15 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:21
+  Rendering admin/items/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/show.html.erb:12
+  Rendered admin/items/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 120ms (Views: 118.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/items/" for 27.91.171.205 at 2021-10-31 12:54:21 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#index as HTML
+  Rendering admin/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/admin/items/index.html.erb:15
+  Rendered admin/items/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 120ms (Views: 118.0ms | ActiveRecord: 0.1ms)
+
+
