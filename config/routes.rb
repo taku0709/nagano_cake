@@ -10,6 +10,8 @@ devise_for :customers, controllers: {
   registrations: 'customers/registrations'
 }
 
+get "admin" => "admin/homes#top"
+
 namespace :admin do
   resources :genres
   resources :items

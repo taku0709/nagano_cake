@@ -1,0 +1,32 @@
+<div class= "container">
+  <div class= "row">
+     <h2>注文履歴一覧</h2>
+     <div class= "col-12">
+      <tabel class= "tabel">
+        <thead>
+          <tr>
+            <th>購入日時</th>
+            <th>購入者</th>
+            <th>注文個数</th>
+          </tr>
+        </thead>
+        <tboby>
+          <%=@orders.each do |order| %>
+          <tr>
+            <td><%= order.created_at %></td>
+            <td><%= order.customer.last_name %><%=order.customer.first_name %></td>
+            <td>
+              <% @sum = 0 %>
+              <% order.order_details.each do |order_detail| %>
+               <% order_detail.amount %>
+               <% @sum += order_detail.amount %>
+              <% end %>
+              <%= @sum %>
+            </td>
+          </tr>
+          <% end %>
+        </tboby>
+      </tabel>
+     </div>
+  </div>
+</div>
