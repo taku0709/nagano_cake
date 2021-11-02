@@ -94,7 +94,7 @@ ActiveRecord::Schema.define(version: 2021_10_15_145903) do
     t.string "postal_code"
     t.string "address"
     t.string "name"
-    t.integer "payment_method"
+    t.integer "payment_method"%=
     t.integer "postage"
     t.integer "billing_amount"
     t.integer "is_active"
