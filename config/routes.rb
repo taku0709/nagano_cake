@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+ root 'public/homes#top'
   devise_for :admins, controllers: {
   sessions:      'admins/sessions',
   passwords:     'admins/passwords',
@@ -11,13 +12,22 @@ devise_for :customers, controllers: {
 }
 
 get "admin" => "admin/homes#top"
+get "/about" => "homes#about"
 
 namespace :admin do
   resources :genres
   resources :items
   resources :customers
   resources :orders
-  resou
+  resources :order_details
+end
+
+namespace :public do
+  resources :cart_items
+  resources :items
+  resources :customers
+  resources :orders
+  resources :addresses
 end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
