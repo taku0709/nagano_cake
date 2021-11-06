@@ -13,6 +13,8 @@ devise_for :customers, controllers: {
 
 get "admin" => "admin/homes#top"
 get "/about" => "homes#about"
+get '/customers/:id/unsubscribe' => 'customers#unsubscribe', as: 'unsubscribe'
+patch '/customers/:id/withdrawal' => 'customers#withdrawal', as: 'withdrawal'
 
 namespace :admin do
   resources :genres
