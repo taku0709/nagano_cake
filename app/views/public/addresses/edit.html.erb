@@ -1,0 +1,13 @@
+<div class= "container">
+ <div class= "row">
+  <div class= "col-12">
+   <h2>配送先編集</h2>
+   <%= form_with model:@address,local:ture do |f| %>
+    <p class= "text-center">郵便番号（ハイフンなし）<%= f.text_field :postal_code %></p>
+    <p class= "text-center">住所<%= f.text_field :address %></p>
+    <p class= "text-center">宛名<%= f.text_field :name %></p></br>
+    <%= f.submit "編集する", class: "btn btn-primary" %>
+   <% end %>
+  </div>
+ </div>
+</div>
