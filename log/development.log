@@ -9685,3 +9685,35 @@ Processing by Public::HomesController#top as HTML
 Completed 200 OK in 742ms (Views: 710.3ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/" for 27.91.171.205 at 2021-11-09 14:01:20 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/homes/top.html.erb:20
+  Rendered public/homes/top.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 333ms (Views: 314.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 27.91.171.205 at 2021-11-09 14:01:23 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/homes/top.html.erb:20
+  Rendered public/homes/top.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 54ms (Views: 52.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 27.91.171.205 at 2021-11-09 14:01:40 +0000
+Cannot render console from 27.91.171.205! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/homes/top.html.erb:20
+  Rendered public/homes/top.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 71ms (Views: 70.5ms | ActiveRecord: 0.1ms)
+
+
