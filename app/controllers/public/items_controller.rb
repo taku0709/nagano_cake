@@ -7,6 +7,10 @@ class Public::ItemsController < ApplicationController
    @item = Item.find(params[:id])
   end
 
+  def with_tax_price
+   (price * 1.1).floor
+  end
+
   private
 
    def cart_item_params
