@@ -11,8 +11,8 @@ devise_for :customers, controllers: {
   registrations: 'customers/registrations'
 }
 
-get "admin" => "admin/homes#top"
-get "/home/about" => "homes#about"
+get "/admin" => "admin/homes#top"
+get "/about" => "homes#about"
 get '/customers/:id/unsubscribe' => 'customers#unsubscribe', as: 'unsubscribe'
 patch '/customers/:id/withdrawal' => 'customers#withdrawal', as: 'withdrawal'
 
@@ -29,6 +29,8 @@ namespace :public do
   resources :items
   resources :customers
   resources :orders
+  post "/orders/confirm" => "orders#confirm"
+  get "/orders/thanks" => "orders#thanks"
   resources :addresses
 end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
