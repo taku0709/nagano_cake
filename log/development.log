@@ -10693,3 +10693,117 @@ SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/layouts/applicatio
                  ^):
   
 app/views/layouts/application.html.erb:35: syntax error, unexpected ';', expecting ':'
+Started GET "/" for 27.137.114.79 at 2021-11-19 16:18:17 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/homes/top.html.erb:20
+  Rendered public/homes/top.html.erb within layouts/application (14.5ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/layouts/application.html.erb:38: syntax error, unexpected ';', expecting ':'
+         '.freeze;@output_buffer.append=( link_...
+                 ^):
+  
+app/views/layouts/application.html.erb:38: syntax error, unexpected ';', expecting ':'
+Started GET "/" for 27.137.114.79 at 2021-11-19 16:23:04 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/homes/top.html.erb:20
+  Rendered public/homes/top.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/layouts/application.html.erb:38: syntax error, unexpected ';', expecting ':'
+         '.freeze;@output_buffer.append=( link_...
+                 ^):
+  
+app/views/layouts/application.html.erb:38: syntax error, unexpected ';', expecting ':'
+Started GET "/" for 27.137.114.79 at 2021-11-19 16:25:12 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/homes/top.html.erb:20
+  Rendered public/homes/top.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/layouts/application.html.erb:38: syntax error, unexpected ';', expecting ':'
+         '.freeze;@output_buffer.append=( link_...
+                 ^):
+  
+app/views/layouts/application.html.erb:38: syntax error, unexpected ';', expecting ':'
+Started GET "/" for 27.137.114.79 at 2021-11-19 16:25:28 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/homes/top.html.erb:20
+  Rendered public/homes/top.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/layouts/application.html.erb:38: syntax error, unexpected ';', expecting ':'
+         '.freeze;@output_buffer.append=( link_...
+                 ^):
+  
+app/views/layouts/application.html.erb:38: syntax error, unexpected ';', expecting ':'
+Started GET "/" for 27.137.114.79 at 2021-11-19 16:25:33 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/homes/top.html.erb:20
+  Rendered public/homes/top.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/layouts/application.html.erb:38: syntax error, unexpected ';', expecting ':'
+         '.freeze;@output_buffer.append=( link_...
+                 ^):
+  
+app/views/layouts/application.html.erb:38: syntax error, unexpected ';', expecting ':'
+Started GET "/" for 27.137.114.79 at 2021-11-19 16:31:48 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/homes/top.html.erb:20
+  Rendered public/homes/top.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/layouts/application.html.erb:38: syntax error, unexpected ';', expecting ':'
+         '.freeze;@output_buffer.append=( link_...
+                 ^):
+  
+app/views/layouts/application.html.erb:38: syntax error, unexpected ';', expecting ':'
+Started GET "/" for 27.137.114.79 at 2021-11-19 16:31:49 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/homes/top.html.erb:20
+  Rendered public/homes/top.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/layouts/application.html.erb:38: syntax error, unexpected ';', expecting ':'
+         '.freeze;@output_buffer.append=( link_...
+                 ^):
+  
+app/views/layouts/application.html.erb:38: syntax error, unexpected ';', expecting ':'

@@ -8,6 +8,11 @@ class Public::OrdersController < ApplicationController
  def new
    @addresses = Address.all
  end
+ 
+ def show
+  @order = Order.find(params[:id
+ ])
+ end
 
 
 
