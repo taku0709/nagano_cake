@@ -2,7 +2,7 @@
  <div class= "row">
   <h2>配送先登録/一覧</h2>
    <div class="col-md-10 col-md-offset-1">
-    <%= form_with model:@address,local:ture do |f| %>
+    <%= form_with model: @address, url: public_addresses_path, local:true do |f| %>
      <div class= "form-group">
       <%= f.label :郵便番号 %><%= f.text_field :postal_code, autofocus: true, autocomplete: "postal_code" %>
      </div>
@@ -13,7 +13,7 @@
       <%= f.label :宛名 %><%= f.text_field :name, autofocus: true, autocomplete: "name" %>
      </div>
      <div class= "text-right">
-      <%= f.submt "新規登録" , class: "btn btn-primary" %>
+      <%= f.submit "新規登録" , class: "btn btn-primary" %>
      </div>
     <% end %>
    </div>
@@ -25,12 +25,12 @@
       <th>宛名</th>
      </tr>
      <tr>
-      <td><%= address.postal_code %></td>
-      <td><%= address.address %></td>
-      <td><%= address.name %></td>
+      <td><%= @address.postal_code %></td>
+      <td><%= @address.address %></td>
+      <td><%= @address.name %></td>
       <td>
-       <%= link_to "編集する", edit_public_address_path(address), class: "btn btn-primary" %>
-       <%= link_to "削除する", public_address_path(address), method: :delete, class: "btn btn-danger" %>
+       <%= link_to "編集する", edit_public_address_path, class: "btn btn-primary" %>
+       <%= link_to "削除する", public_address_path, method: :delete, class: "btn btn-danger" %>
       </td>
      </tr>
     </tabel>

@@ -27,7 +27,7 @@ end
 namespace :public do
   resources :cart_items
   resources :items
-  resources :customers
+  resource :customers
   resources :orders
   post "/orders/confirm" => "orders#confirm"
   get "/orders/thanks" => "orders#thanks"

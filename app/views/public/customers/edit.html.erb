@@ -3,7 +3,7 @@
   <h2>会員情報編集</h2>
  </div>
  <div class= "form-horizontal">
-  <%= form_for (@customer, url: public_customer_path) do |f| %>
+  <%= form_with model: @customer,url: public_customers_path, local:true do |f| %>
    <div class="form-group">
     <%= f.label :last_name, "名前    (姓)" %><%= f.text_field :last_name, autofocus: true, autocomplete: "last_name" %>
     <%= f.label :first_name, "(名)" %><%= f.text_field :first_name,autofocus: true, autocomplete: "first_name" %>
@@ -38,6 +38,7 @@
     <%= f.submit "編集内容を保存", class: "btn btn-success" %>
     <%= link_to "退会する", cancel_customer_registration_path, class: "btn btn-danger" %>
    </div>
-  <% end %></br>
+
+  <% end %>
  </div>
 </div>
