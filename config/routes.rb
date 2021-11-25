@@ -25,8 +25,11 @@ namespace :admin do
 end
 
 namespace :public do
-  resources :cart_items
+  resources :cart_items do
+   delete :destroy_all, on: :collection
+  end
   resources :items
+  post "/items/:id(.:format)" => "items#show"
   resource :customers
   resources :orders
   post "/orders/confirm" => "orders#confirm"

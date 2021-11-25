@@ -1,6 +1,7 @@
 class Public::CartItemsController < ApplicationController
 
  def index
+  @cart_items = CartItem.all
  end
 
  def subtotal
@@ -14,10 +15,11 @@ class Public::CartItemsController < ApplicationController
  def update
  end
 
- def destoroy
+ def destroy
  end
 
- def destory_all
+ def destroy_all
+  cart_item_params.destroy_all
  end
 
 

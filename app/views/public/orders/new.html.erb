@@ -1,7 +1,7 @@
 <div class= "container">
  <div class= "row">
   <h1 class= "text-center">注文情報入力</h1>
-   <div class= "border col-5">
+   <div class= "border col-12">
     <%= form_with model:@order,local:true do |f| %>
      <div class= "form-group">
       <h2 class="font-weight-bold">支払方法</h2>
@@ -27,8 +27,10 @@
        <%= f.label :name, "宛名" %>
        <%= f.text_field :name, class: " form-control" %>
      </div>
-     <%= f.submit "確認へ進む", class: "btn btn-primary" %>
-    <% end %>
+     <div class= "text-center">
+      <%= f.submit "確認へ進む", class: "btn btn-primary" %>
+     </div>
+    <% end %></br>
    </div>
  </div>
 </div>
