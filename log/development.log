@@ -14078,3 +14078,94 @@ Processing by Public::ItemsController#show as HTML
 Completed 200 OK in 115ms (Views: 111.1ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/public/items" for 27.137.114.79 at 2021-11-25 17:04:31 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:6
+  Rendered public/items/index.html.erb within layouts/application (16.1ms)
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:36
+Completed 200 OK in 568ms (Views: 546.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/public/items/1" for 27.137.114.79 at 2021-11-25 17:04:33 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/items_controller.rb:7
+  Rendering public/items/show.html.erb within layouts/application
+  Rendered public/items/show.html.erb within layouts/application (18.6ms)
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:36
+Completed 200 OK in 138ms (Views: 134.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/attachments/416825dfcc8a0111b224d768fb7207e7ea0cd604/store/fill/500/500/2fe3fc2970598fb4d4cfc46bd3b82499a1c178e799ad2076944799f4cf34/image.jpeg" for 27.137.114.79 at 2021-11-25 17:04:34 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-11-25 17:04:34 +0000] GET "/416825dfcc8a0111b224d768fb7207e7ea0cd604/store/fill/500/500/2fe3fc2970598fb4d4cfc46bd3b82499a1c178e799ad2076944799f4cf34/image.jpeg" 200 146.1ms
+
+Started GET "/public/items" for 27.137.114.79 at 2021-11-25 17:07:25 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:7
+  Rendered public/items/index.html.erb within layouts/application (4.6ms)
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:36
+Completed 200 OK in 122ms (Views: 120.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/public/items" for 27.137.114.79 at 2021-11-25 17:07:42 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:7
+  Rendered public/items/index.html.erb within layouts/application (3.5ms)
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:36
+Completed 200 OK in 110ms (Views: 108.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/public/items" for 27.137.114.79 at 2021-11-25 17:08:11 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:7
+  Rendered public/items/index.html.erb within layouts/application (3.6ms)
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:36
+Completed 200 OK in 125ms (Views: 124.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/public/items" for 27.137.114.79 at 2021-11-25 17:10:15 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:7
+  Rendered public/items/index.html.erb within layouts/application (3.5ms)
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:36
+Completed 200 OK in 107ms (Views: 104.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/public/items" for 27.137.114.79 at 2021-11-25 17:11:39 +0000
+Cannot render console from 27.137.114.79! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:8
+  Rendered public/items/index.html.erb within layouts/application (5.9ms)
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:36
+Completed 200 OK in 166ms (Views: 163.7ms | ActiveRecord: 0.3ms)
+
+
