@@ -12,9 +12,8 @@ devise_for :customers, controllers: {
 }
 
 get "/admin" => "admin/homes#top"
-get "/about" => "homes#about"
-get '/customers/:id/unsubscribe' => 'customers#unsubscribe', as: 'unsubscribe'
-patch '/customers/:id/withdraw' => 'customers#withdraw', as: 'withdraw'
+get "about" => "homes#about"
+
 
 namespace :admin do
   resources :genres
@@ -31,6 +30,9 @@ namespace :public do
   resources :items
   post "/items/:id(.:format)" => "items#show"
   resource :customers
+  get "/customers/my_page" => "customers#show"
+  get '/customers/:id/unsubscribe' => 'customers#unsubscribe', as: 'unsubscribe'
+  patch '/customers/:id/withdraw' => 'customers#withdraw', as: 'withdraw'
   resources :orders
   post "/orders/confirm" => "orders#confirm"
   get "/orders/thanks" => "orders#thanks"
