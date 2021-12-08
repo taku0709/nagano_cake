@@ -11,8 +11,9 @@ devise_for :customers, controllers: {
   registrations: 'customers/registrations'
 }
 
-get "/admin" => "admin/homes#top"
-get "about" => "homes#about"
+
+
+get "about", :to => "public/homes#about"
 
 
 namespace :admin do
@@ -21,6 +22,7 @@ namespace :admin do
   resources :customers
   resources :orders
   resources :order_details
+  get "", :to =>"homes#top",as: 'top'
 end
 
 namespace :public do
